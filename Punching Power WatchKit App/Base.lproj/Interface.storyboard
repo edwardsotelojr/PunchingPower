@@ -1,15 +1,91 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U4D-Hg-LYg">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--DeviceMotionController-->
+        <scene sceneID="22b-nU-izv">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="DeviceMotionController" id="U4D-Hg-LYg" customClass="DeviceMotionController" customModule="Punching_Power_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="pp7-6X-sTV">
+                            <items>
+                                <label alignment="left" text="AccX" id="JPv-Mb-y57">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="O9J-dJ-vCu" userLabel="AccX Label"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="A7Q-zK-v6C">
+                            <items>
+                                <label alignment="left" text="AccY" id="anr-xg-nIV">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="XV7-Di-H9V" userLabel="AccY Label"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="gkR-rf-JKA">
+                            <items>
+                                <label alignment="left" text="AccZ" id="cRp-1S-God">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="right" text="Value" textAlignment="right" id="neO-1x-wPP" userLabel="AccZ Label"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="l5C-te-Rqu">
+                            <items>
+                                <label alignment="left" text="AccX Max" id="k0d-Af-OK7"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="Tja-Rd-X01"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="PjY-5a-o3f">
+                            <items>
+                                <label alignment="left" text="AccY Max" id="V7s-Ff-IIl"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="Yyt-dr-OeA"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="h1a-uG-Wsx">
+                            <items>
+                                <label alignment="left" text="AccZ Max" id="XpU-K7-2Nc"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="B2H-R0-RII"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="QcR-Y7-nc2">
+                            <items>
+                                <label alignment="left" text="AccXMin" id="rrV-1s-0wd"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="xrU-KT-1mh"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="gjI-jL-2hG">
+                            <items>
+                                <label alignment="left" text="AccYMin" id="JvY-Xk-Ek2"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="tiJ-2D-BxI"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="5aO-S6-5lX">
+                            <items>
+                                <label alignment="left" text="AccZMin" id="MwN-DD-70t"/>
+                                <label alignment="right" text="Label" textAlignment="right" id="6Ru-Oh-kwf"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="AccXLabel" destination="O9J-dJ-vCu" id="SOO-zq-F00"/>
+                        <outlet property="AccXMaxLabel" destination="Tja-Rd-X01" id="09u-0C-TBe"/>
+                        <outlet property="AccXMinLabel" destination="xrU-KT-1mh" id="Jmt-ZN-fhh"/>
+                        <outlet property="AccYLabel" destination="XV7-Di-H9V" id="9Vo-P5-IWw"/>
+                        <outlet property="AccYMaxLabel" destination="Yyt-dr-OeA" id="KVB-3Q-tca"/>
+                        <outlet property="AccYMinLabel" destination="tiJ-2D-BxI" id="bsQ-fH-kHv"/>
+                        <outlet property="AccZLabel" destination="neO-1x-wPP" id="2uV-zY-VPP"/>
+                        <outlet property="AccZMaxLabel" destination="B2H-R0-RII" id="ywA-7g-gUK"/>
+                        <outlet property="AccZMinLabel" destination="6Ru-Oh-kwf" id="h3E-SM-pJm"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-5136" y="744"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,7 @@
 		D5A30CCD2696B16400DE2012 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A30CCC2696B16400DE2012 /* ExtensionDelegate.swift */; };
 		D5A30CCF2696B16400DE2012 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A30CCE2696B16400DE2012 /* ComplicationController.swift */; };
 		D5A30CD12696B16500DE2012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A30CD02696B16500DE2012 /* Assets.xcassets */; };
+		D5A30CE12696B74600DE2012 /* DeviceMotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A30CE02696B74600DE2012 /* DeviceMotionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D5A30CCE2696B16400DE2012 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		D5A30CD02696B16500DE2012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5A30CD22696B16500DE2012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A30CE02696B74600DE2012 /* DeviceMotionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMotionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A30CCA2696B16400DE2012 /* InterfaceController.swift */,
+				D5A30CE02696B74600DE2012 /* DeviceMotionController.swift */,
 				D5A30CCC2696B16400DE2012 /* ExtensionDelegate.swift */,
 				D5A30CCE2696B16400DE2012 /* ComplicationController.swift */,
 				D5A30CD02696B16500DE2012 /* Assets.xcassets */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A30CCD2696B16400DE2012 /* ExtensionDelegate.swift in Sources */,
+				D5A30CE12696B74600DE2012 /* DeviceMotionController.swift in Sources */,
 				D5A30CCB2696B16400DE2012 /* InterfaceController.swift in Sources */,
 				D5A30CCF2696B16400DE2012 /* ComplicationController.swift in Sources */,
 			);
